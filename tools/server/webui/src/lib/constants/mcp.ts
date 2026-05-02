@@ -26,12 +26,12 @@ export const MCP_PROTOCOL_VERSION = '2025-06-18';
 export const DEFAULT_MCP_CONFIG = {
 	protocolVersion: MCP_PROTOCOL_VERSION,
 	capabilities: { tools: { listChanged: true } } as ClientCapabilities,
-	clientInfo: { name: 'llama-webui-mcp', version: DEFAULT_CLIENT_VERSION } as Implementation,
+	clientInfo: { name: 'zllama-webui-mcp', version: DEFAULT_CLIENT_VERSION } as Implementation,
 	requestTimeoutSeconds: 300, // 5 minutes for long-running tools
 	connectionTimeoutMs: 10_000 // 10 seconds for connection establishment
 } as const;
 
-export const MCP_SERVER_ID_PREFIX = 'LlamaCpp-WebUI-MCP-Server';
+export const MCP_SERVER_ID_PREFIX = 'ZllamaIo-WebUI-MCP-Server';
 
 export const MCP_RECONNECT_INITIAL_DELAY = 1000;
 export const MCP_RECONNECT_BACKOFF_MULTIPLIER = 2;

@@ -76,7 +76,7 @@ bool server_http_context::init(const common_params & params) {
     srv.reset(new httplib::Server());
 #endif
 
-    srv->set_default_headers({{"Server", "llama.cpp"}});
+    srv->set_default_headers({{"Server", "zllama.io"}});
     srv->set_logger(log_server_request);
     srv->set_exception_handler([](const httplib::Request &, httplib::Response & res, const std::exception_ptr & ep) {
         // this is fail-safe; exceptions should already handled by `ex_wrapper`

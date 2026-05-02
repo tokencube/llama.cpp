@@ -20,7 +20,7 @@ import { DatabaseService } from '$lib/services/database.service';
 import { MessageRole, MessageType } from '$lib/enums';
 import type { DatabaseMessage } from '$lib/types/database';
 
-const MIGRATION_DONE_KEY = 'llama-webui-migration-v2-done';
+const MIGRATION_DONE_KEY = 'zllama-webui-migration-v2-done';
 
 /**
  * @deprecated Part of legacy migration — remove with the migration module.
