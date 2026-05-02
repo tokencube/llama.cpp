@@ -381,7 +381,7 @@
 			>
 				{#if isEmpty}
 					<div class="mb-8 px-4 text-center" use:fadeInView={{ duration: 300 }}>
-						<h1 class="mb-2 text-2xl font-semibold tracking-tight md:text-3xl">Hello there</h1>
+						<h1 class="mb-2 text-2xl font-semibold tracking-tight md:text-3xl">{WELCOME_TITLE}</h1>
 
 						<p class="text-muted-foreground md:text-lg">
 							{serverStore.props?.modalities?.audio
